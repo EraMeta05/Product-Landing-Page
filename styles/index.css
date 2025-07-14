@@ -162,12 +162,10 @@ iframe {
 
  @media (max-width: 650px) {
   #header {
-    /* Reduce padding on smaller screens */
     padding: 0 10px;
   }
 
   nav > ul {
-    /* Simply reduce the gap between items to make them fit */
     gap: 15px;
   }
 }
