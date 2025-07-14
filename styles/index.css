@@ -1,25 +1,25 @@
 #header-img {
-  width: 10%;
+  max-width: 80px;
+  height: auto;
 }
 
 #header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   min-height: 75px;
   display: flex;
-  padding-left: 10px;
+  padding: 0 20px;
   align-items: center;
   background-color: white;
-  justify-content: space-around;
-}
-
-#nav-bar {
-  flex: 1;
+  justify-content: space-between;
 }
 
 body {
   background: #F7C6D9;
   font-family: 'Lato', sans-serif;
+  padding-top: 90px;
 }
 
 #hero {
@@ -59,14 +59,11 @@ a {
 
 nav > ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-li {
-  margin-top: 15px;
-  list-style: none
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 35px;
 }
 
 footer {
@@ -163,15 +160,14 @@ iframe {
    text-align: center
  }
 
-@media (max-width: 600px) {
-  nav > ul {
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    gap: 10px;
+ @media (max-width: 650px) {
+  #header {
+    /* Reduce padding on smaller screens */
+    padding: 0 10px;
   }
 
-  nav > ul > li {
-    margin-top: 5px;
+  nav > ul {
+    /* Simply reduce the gap between items to make them fit */
+    gap: 15px;
   }
 }
