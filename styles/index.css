@@ -1,0 +1,177 @@
+#header-img {
+  width: 10%;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+}
+
+#nav-bar {
+  flex: 1;
+}
+
+body {
+  background: #F7C6D9;
+  font-family: 'Lato', sans-serif;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+#email {
+  color: white;
+  border: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px
+}
+
+.btn{
+  background-color: #6B4C3B;
+  border: none;
+  color: #F7C6D9;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: gray
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+li {
+  margin-top: 15px;
+  list-style: none
+}
+
+footer {
+  background-color: white;
+}
+
+span {
+  padding-left: 40px
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 20px
+}
+
+footer > span {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+  padding-right: 10px
+}
+
+#make-a-cake {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px
+}
+
+#pricing {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: #FDE5EC
+}
+
+.product > .level {
+  background-color: #D6A95D;
+  color: white;
+  width: 100%;
+  padding: 14px 0;
+  text-transform: uppercase;
+  font-weight: 800
+}
+
+.product > ol > li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-right: 28px
+}
+
+.first {
+  color: #6B4C3B;
+  font-size: 1.8em
+}
+
+.first::before {
+  content: "♡ ";
+  font-size: 1.2em
+}
+
+.first::after {
+  content: " ♡";
+  font-size: 1.2em
+}
+ h2 {
+   color: #CBA135;
+   text-align: center;
+ }
+
+ p {
+   text-align: center
+ }
+
+@media (max-width: 600px) {
+  nav > ul {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav > ul > li {
+    margin-top: 5px;
+  }
+}
